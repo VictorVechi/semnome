@@ -1,4 +1,4 @@
-var cep = document.getElementById("CEP")
+var cep = document.getElementById("cep")
 
 cep.addEventListener("change", function (event) {
   let valor = verificarTraco(cep)
@@ -33,7 +33,7 @@ function verificarTraco(cep) {
 }
 
 function preencherCampos(obj) {
-  document.getElementById("endereco").value = obj.logradouro
+  document.getElementById("rua").value = obj.logradouro
   document.getElementById("bairro").value = obj.bairro
   document.getElementById("cidade").value = obj.localidade
   document.getElementById("estado").value = obj.uf
