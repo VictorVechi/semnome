@@ -1,4 +1,3 @@
-
 var cep = document.getElementById("CEP")
 
 cep.addEventListener("change", function (event) {
@@ -11,9 +10,6 @@ cep.addEventListener("change", function (event) {
   }
 
 });
-
-
-
 
 function requisicao(cep) {
   // nome = document.getElementById("pk-name").value
