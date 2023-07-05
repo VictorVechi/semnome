@@ -8,11 +8,9 @@ cep.addEventListener("change", function (event) {
   } else {
     cep.style.border = "1px solid red"
   }
-
 });
 
 function requisicao(cep) {
-  // nome = document.getElementById("pk-name").value
   $.ajax({
     url: `https://viacep.com.br/ws/${cep}/json/`,
     method: "GET",
