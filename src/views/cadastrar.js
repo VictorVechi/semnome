@@ -14,8 +14,17 @@ function cadastrar(event) {
         document.getElementById("numero").value,
         document.getElementById("complemento").value
     ]
+    
+    let preenchido = true;
 
-    if (dados[2] != "" && dados[3] != "") {
+    for (let i = 0; i < dados.length; i++) {
+        if (dados[i] == "") {
+            preenchido = false;
+            break;
+        }
+    }
+
+    if (preenchido) {
         let cadastro = new Cadastro(...dados);
         
         console.log(cadastro);
@@ -26,7 +35,6 @@ function cadastrar(event) {
             alert("Email ou senha inválidos");
         }
     } else {
-        document.getElementById("senha").style.borderColor = "red";
-        document.getElementById("confirma-senha").style.borderColor = "red";
+        alert("Preencha todos os campos!");
     }
 }
