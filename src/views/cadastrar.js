@@ -17,7 +17,7 @@ function cadastrar(event) {
 
     if (dados[2] != "" && dados[3] != "") {
         let cadastro = new Cadastro(...dados);
-
+        
         console.log(cadastro);
 
         if (cadastro.validarEmail() && cadastro.validarSenha()) {
@@ -25,5 +25,8 @@ function cadastrar(event) {
         } else {
             alert("Email ou senha inválidos");
         }
+    } else {
+        document.getElementById("senha").style.borderColor = "red";
+        document.getElementById("confirma-senha").style.borderColor = "red";
     }
 }
