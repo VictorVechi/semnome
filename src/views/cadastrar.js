@@ -14,13 +14,16 @@ function cadastrar(event) {
         document.getElementById("numero").value,
         document.getElementById("complemento").value
     ]
-    let cadastro = new Cadastro(...dados);
 
-    console.log(cadastro);
+    if (dados[2] != "" && dados[3] != "") {
+        let cadastro = new Cadastro(...dados);
 
-    if (cadastro.validarEmail() && cadastro.validarSenha()) {
-        alert("Cadastro realizado com sucesso");
-    } else {
-        alert("Email ou senha inválidos");
+        console.log(cadastro);
+
+        if (cadastro.validarEmail() && cadastro.validarSenha()) {
+            alert("Cadastro realizado com sucesso");
+        } else {
+            alert("Email ou senha inválidos");
+        }
     }
 }
