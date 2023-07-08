@@ -12,3 +12,85 @@ p{
 .btn-info{
 margin: 0 !important;
 }
+
+/* ----------------------------------------------------- Estilização dos Cards de preço ---- */
+.planos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+  
+
+
+}
+
+
+.plano1{
+  border: solid black;
+  text-align: center;
+  margin: 5px;
+  width: 250px; 
+  height: 300px; 
+    
+    
+}
+
+.plano2{
+ border:  solid red;
+ text-align: center;
+ margin: 5px;
+ width: 250px; 
+  height: 300px; 
+}
+
+.plano3{
+    border: solid green;
+    text-align: center;
+    margin: 5px;
+    width: 250px; 
+    height: 300px; 
+}
+
+.botao1{
+  border: solid pink;  
+
+}
+
+.botao2{
+    border: solid pink;  
+}
+
+.botao3{
+    border: solid pink;  
+}
+
+
+/* -------------------------------------------------------- Estilização das imagens dispostas no cards de preço --- */
+
+img{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+
+}
+
+
+
+
+/* ------------------------------------------------------- Estilização dos blocos explicativos dos planos ----- */
+
+.tituloSobrePlanos{}
+
+.sobrePlanos1{
+    border: #1d2a30;
+}
+
+.sobrePlanos2{
+    border: salmon;
+}
+
+.sobrePlanos3{
+    border: magenta;
+}
+
