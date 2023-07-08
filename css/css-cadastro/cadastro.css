@@ -25,14 +25,26 @@ nav {
 
 h1 {
     justify-self: flex-start;
+    margin-bottom: 0 !important;
     margin-left: 10px;
 }
 
+ul {
+    justify-self: flex-end;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+}
 
 ul li {
     list-style: none;
     display: inline;
     margin: 0 40px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
 
 main {
