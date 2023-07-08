@@ -27,51 +27,73 @@ margin: 0 !important;
 
 
 .plano1{
-  border: solid black;
+  border: solid #1d2a30;
   text-align: center;
   margin: 5px;
   width: 250px; 
   height: 300px; 
-    
+  border-radius: 10px;  
+  padding:10px;
+  background-color:#E8E2F2 
     
 }
 
 .plano2{
- border:  solid red;
+ border:  solid #1d2a30;
  text-align: center;
  margin: 5px;
  width: 250px; 
   height: 300px; 
+  border-radius: 10px;
+  padding:10px;
+  background-color:#E8E2F2 
 }
 
 .plano3{
-    border: solid green;
+    border: solid #1d2a30;
     text-align: center;
     margin: 5px;
     width: 250px; 
     height: 300px; 
+    border-radius: 10px;
+    padding:10px;
+    background-color:#E8E2F2 
+   
 }
 
-.botao1{
-  border: solid pink;  
-
+b{
+    font-size:25px;
+    color: #1d2a30; 
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,      
+     1px -1px 0px #FFF,    
+     1px 
+    
 }
 
-.botao2{
-    border: solid pink;  
+
+button{
+    color: #e6fff9;
+    background-color: #00a98f;
+    border-color:#1d2a30;
+    transition:0.2s;
+    cursor:pointer;
+    width:100px;
+    padding:2px
+   
+
 }
-
-.botao3{
-    border: solid pink;  
+button:hover{
+    transform: scale(1.07);
 }
-
-
 /* -------------------------------------------------------- Estilização das imagens dispostas no cards de preço --- */
 
-img{
+.imagens{
     width: 150px;
     height: 150px;
     margin: auto;
+    border-radius:10px;
 
 }
 
