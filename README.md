@@ -1,4 +1,4 @@
-![image](https://github.com/VictorVechi/tomorrows-code/assets/68160102/fb8ff0fb-0bc2-47ba-b765-e25208d204f0)<div >
+<div >
 <h1 align="center">
     <img alt="Tomorrow's Code" title="#Tomorrow's Code" style="background-color: white" src="./assets/logo.svg" width=50px"/>
 </h1>
