@@ -3,14 +3,14 @@
     <img alt="Tomorrow's Code" title="#Tomorrow's Code" style="background-color: white" src="./assets/logo.svg" width=50px"/>
 </h1>
 
-## 💻 Sobre o projeto
+## 🔋 Sobre o projeto
     
 
 </p>
 
 Desenvolvido para avaliação no **Módulo 2** feito pelo **Squad - 7 **.
 
-## 🛠 Stacks
+## 🤖 Stacks
 
 Foi utilizado no projeto as stacks a seguir:
 
@@ -20,7 +20,7 @@ Foi utilizado no projeto as stacks a seguir:
 - [BootStrap][https://getbootstrap.com/]
 - [API][https://viacep.com.br/]
 
-## 🚀 Como executar o projeto
+## 👽 Como executar o projeto
 ```bash
 # Clone este repositório
 $ git clone https://github.com/VictorVechi/tomorrows-code.git
