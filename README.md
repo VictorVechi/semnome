@@ -1,30 +1,32 @@
-<div >
+![image](https://github.com/VictorVechi/tomorrows-code/assets/68160102/fb8ff0fb-0bc2-47ba-b765-e25208d204f0)<div >
 <h1 align="center">
-    <img alt="Tomorrow's Code" title="#Tomorrow's Code" src="./assets/logo.svg" width=50px"/>
+    <img alt="Tomorrow's Code" title="#Tomorrow's Code" style="background-color: white" src="./assets/logo.svg" width=50px"/>
 </h1>
 
 ## 💻 Sobre o projeto
-
+    
 
 </p>
 
-Projeto desenvolvido durante o **Módulo 2 - Squad 7** oferecida pela [EBANX - Resília].
+Desenvolvido para avaliação no **Módulo 2** feito pelo **Squad - 7 **.
 
-## 🛠 Tecnologias
+## 🛠 Stacks
 
-As seguintes ferramentas foram usadas na construção do projeto:
+Foi utilizado no projeto as stacks a seguir:
 
 - [HTML][https://www.w3schools.com/]
 - [CSS][https://www.w3schools.com/]
 - [JavaScript][https://www.w3schools.com/]
+- [BootStrap][https://getbootstrap.com/]
+- [API][https://viacep.com.br/]
 
 ## 🚀 Como executar o projeto
 ```bash
 # Clone este repositório
-$ git clone 
+$ git clone https://github.com/VictorVechi/tomorrows-code.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd 
+$ cd tomorrows-code
 ```
 
 DEVs: Charlie, Denise, Juliene, Larissa e Victor
