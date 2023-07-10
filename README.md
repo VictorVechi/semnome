@@ -7,16 +7,15 @@
     
 
 </p>
-
-Desenvolvido para avaliação no **Módulo 2** feito pelo **Squad - 7 **.
+AQUI VAI A DESCRIÇÃO
 
 ## 🤖 Stacks
 
 Foi utilizado no projeto as stacks a seguir:
 
-- [HTML][https://www.w3schools.com/]
-- [CSS][https://www.w3schools.com/]
-- [JavaScript][https://www.w3schools.com/]
+- [HTML][https://developer.mozilla.org/pt-BR/docs/Web/HTML]
+- [CSS][https://developer.mozilla.org/pt-BR/docs/Web/CSS]
+- [JavaScript][https://developer.mozilla.org/pt-BR/docs/Web/JavaScript]
 - [BootStrap][https://getbootstrap.com/]
 - [API][https://viacep.com.br/]
 
