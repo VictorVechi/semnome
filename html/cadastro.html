@@ -9,6 +9,18 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" defer></script>
+
+    <!-- Javascript -->
+    <script src="../src/services/conexaoApi.js" defer></script>
+    <script src="../src/models/Cliente.js" defer></script>
+    <script src="../src/models/Cadastro.js" defer></script>
+    <script src="../src/views/cadastrar.js" defer></script>
+    <script src="../src/controllers/controller.js" defer></script>
+
     <title>Cadastro</title>
 </head>
 
@@ -26,83 +38,59 @@
     </header>
     <main>
         <section>
+            <h1>Cadastro</h1>
             <form class="row g-3">
-                <div class="row">
-                    <div class="col">
-                        <label for="nome" class="form-label">Nome:</label>
-                        <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome">
-                    </div>
+                <div class="col-md-12">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu Nome">
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="email" class="form-label">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu email">
-                    </div>
-                    <div class="col">
-                        <label for="senha" class="form-label">Senha:</label>
-                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" class="form-label">
-                    </div>
-                    <div class="col">
-                        <label for="confirma-senha" class="form-label">Senha:</label>
-                        <input type="password" name="confirma-senha" id="confirma-senha" placeholder="Confirme sua senha"
-                            class="form-label">
-                    </div>
+                <div class="col-md-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu email">
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="RG" class="form-label">RG:</label>
-                        <input type="text" name="RG" id="RG" placeholder="Digite seu RG">
-                    </div>
+                <div class="col-md-4">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="senha" placeholder="Senha">
                 </div>
-                
-                <div class="row">
-                    <div class="col">
-                        <label for="CEP" class="form-label">CEP:</label>
-                        <input type="text" name="CEP" id="CEP" placeholder="Digite seu CEP" class="form-label">
-                    </div>
-                    <div class="col">
-                        <label for="estado" class="form-label">Estado:</label>
-                        <input type="text" name="estado" id="estado" placeholder="Digite seu estado" class="form-label">
-                    </div>
+                <div class="col-md-4">
+                    <label for="confirmar-senha" class="form-label">Confirmar Senha</label>
+                    <input type="password" class="form-control" id="confirma-senha" placeholder="Confirmação de Senha">
                 </div>
-
-                <div class="row">
-                    <div class="col">
-                        <label for="cidade" class="form-label">Cidade:</label>
-                        <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" class="form-label">
-                    </div>
-                    <div class="col">
-                        <label for="bairro" class="form-label">Bairro:</label>
-                        <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro" class="form-label">
-                    </div>
+                <div class="col-md-6">
+                    <label for="rg" class="form-label">RG</label>
+                    <input type="text" class="form-control" id="rg" name="rg" placeholder="Digite seu RG">
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="endereco" class="form-label">Endereço:</label>
-                        <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço"
-                            class="form-label">
-                    </div>
-                    <div class="col">
-                        <label for="numero" class="form-label">Número:</label>
-                        <input type="text" name="numero" id="numero" placeholder="Digite o número da sua casa"
-                            class="form-label">
-                    </div>
+                <div class="col-md-6">
+                    <label for="cep" class="form-label">Cep</label>
+                    <input type="text" class="form-control" id="cep" placeholder="Digite seu cep">
                 </div>
-
-                <div class="row"><div class="col">
-                    <label for="complemento" class="form-label">Complemento:</label>
-                    <input type="text" name="complemento" id="complemento" placeholder="Digite o complemento"
-                        class="form-label">
-                </div></div>
-                <div class="row">
-                    <div class="col">
-                        <button type="submit" class="btn btn-success">Enviar</button>
-                    </div>
+                <div class="col-md-4">
+                    <label for="estado" class="form-label">Estado</label>
+                    <input type="text" class="form-control" id="estado" placeholder="Digite seu Estado">
                 </div>
-                
-                
-                
-                
+                <div class="col-md-4">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" placeholder="Digite sua Cidade">
+                </div>
+                <div class="col-md-4">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" placeholder="Digite seu Bairro">
+                </div>
+                <div class="col-md-4">
+                    <label for="rua" class="form-label">Rua</label>
+                    <input type="text" class="form-control" id="rua" placeholder="Digite sua Rua">
+                </div>
+                <div class="col-md-4">
+                    <label for="bairro" class="form-label">Número</label>
+                    <input type="text" class="form-control" id="numero" placeholder="Digite seu Número">
+                </div>
+                <div class="col-md-4">
+                    <label for="Complemento" class="form-label">Complemento</label>
+                    <input type="text" class="form-control" id="complemento" placeholder="Digite seu Complemento">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary" id="btnCadastrar">Cadastrar-se</button>
+                </div>
             </form>
         </section>
     </main>
@@ -110,5 +98,4 @@
         <p>Desenvolvido por Tomorrow's Code</p>
     </footer>
 </body>
-
 </html>
