@@ -7,7 +7,7 @@ class Cliente {
 
     validarEmail() {
         if (this.email.indexOf("@") != -1) {
-            if (this.email.indexOf("@") != this.email.length - 1 && this.email.indexOf("@") != 0) {
+            if (this.email.indexOf("@") != this.email.length - 1 && this.email.indexOf("@") - 2 > 0) {
                 return true;
             } else {
                 return false;
