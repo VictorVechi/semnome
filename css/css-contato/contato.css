@@ -1,4 +1,4 @@
-main {
+.container-contato {
     display: flex;
     flex-wrap: wrap;
 }
@@ -26,7 +26,7 @@ main {
     transition: .8s;
 } 
 
-figure {
+.figure {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +39,7 @@ figure {
     border-radius: 40px;
 }
 
-span, figcaption {
+.span, .fig {
     text-align: center;
 }
 
