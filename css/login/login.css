@@ -1,3 +1,24 @@
+html,
+body {
+    height: 100%;
+}
+
+header {
+    height: 7%;
+}
+
+main {
+    height: 86%;
+}
+
+footer {
+    height: 7%;
+}
+
+section {
+    width: 60%;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -5,7 +26,16 @@ form {
     row-gap: 20px;
 }
 
-@media screen and (max-width: 600px) {
+.btn-color {
+    background-color: #00a98f !important;
+    color: #e6fff9;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* @media screen and (max-width: 600px) {
     section {
         flex-direction: column;
     }
@@ -14,4 +44,4 @@ form {
         display: flex;
         flex-direction: column;
     }
-}
+} */
