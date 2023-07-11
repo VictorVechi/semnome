@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/css-cadastro/cadastro.css">
+    <link rel="stylesheet" href="../css/css-cadastro/media-cadastro.css">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,6 +16,10 @@
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" defer></script>
+
+    <!-- Hash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js" defer></script>
 
     <!-- Javascript -->
     <script src="../src/services/conexaoApi.js" defer></script>
@@ -26,20 +33,25 @@
 
 <body>
     <header>
-        <nav>
-            <h1>Tomorrow's Code</h1>
-            <ul>
-                <li>Home</li>
-                <li>Contato</li>
-                <li>BLABLA</li>
-                <li>BLABLA</li>
-            </ul>
+        <nav class="navbar justify-content-lg-between" style="background-color: #e6fff9">
+            <!--logotipo-->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo.svg" width="30" height="30" alt="" />Tomorrow's Code
+            </a>
+
+            <!--Nav links-->
+            <div class="justify-content-lg-between">
+                <!--Botão de login-->
+                <button type="button" class="btn btn-outline-info">Login</button>
+                <!-- Botão de cadastro
+                    <button type="button" class="btn btn-info">Inscreva-se</button> -->
+            </div>
         </nav>
     </header>
     <main>
         <section>
             <h1>Cadastro</h1>
-            <form class="row g-3">
+            <form class="row g-3" autocomplete="off">
                 <div class="col-md-12">
                     <label for="nome" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="nome" placeholder="Digite seu Nome">
@@ -89,7 +101,7 @@
                     <input type="text" class="form-control" id="complemento" placeholder="Digite seu Complemento">
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary" id="btnCadastrar">Cadastrar-se</button>
+                    <button type="submit" class="btn btn-info" id="btnCadastrar">Cadastrar-se</button>
                 </div>
             </form>
         </section>
@@ -98,4 +110,5 @@
         <p>Desenvolvido por Tomorrow's Code</p>
     </footer>
 </body>
+
 </html>

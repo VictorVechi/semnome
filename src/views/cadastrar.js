@@ -1,10 +1,14 @@
 function cadastrar(event) {
     event.preventDefault();
+    let senha = document.getElementById("senha").value;
+    let confirmarSenha = document.getElementById("confirma-senha").value;
+    senha = CryptoJS.MD5(senha);
+    confirmarSenha = CryptoJS.MD5(confirmarSenha);
     let dados = [
         document.getElementById("nome").value,
         document.getElementById("email").value,
-        document.getElementById("senha").value,
-        document.getElementById("confirma-senha").value,
+        senha.toString(),
+        confirmarSenha.toString(),
         document.getElementById("rg").value,
         document.getElementById("cep").value,
         document.getElementById("estado").value,
