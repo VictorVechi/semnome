@@ -1,0 +1,78 @@
+/* -------------------------------------------------- Estilização do corpo --- */
+main {
+  background-color: #f7fdfc;
+  margin: 0px auto;
+  padding: 30px 0;
+}
+
+p {
+  color: #1d2a30;
+}
+
+.btn-info {
+  margin: 0 !important;
+}
+
+/* ----------------------------------------------------- Estilização dos Cards de preço ---- */
+.planos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 8% auto;
+  padding: 20px;
+  width: 90%;
+}
+
+.cardPlano {
+  border: solid #1d2a30;
+  text-align: center;
+  margin: 5px;
+  width: fit-content;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #e8e2f2;
+}
+
+b {
+  font-size: 25px;
+}
+
+/* -------------------------------------------------------- Estilização das imagens dispostas no cards de preço --- */
+
+.imagens {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* ------------------------------------------------------- Estilização dos blocos explicativos dos planos ----- */
+
+.sobreOsPlanos {
+  padding: 20px;
+  width: 90%;
+  padding: 10px;
+  margin: 10% auto;
+}
+.tituloDescricao {
+  font-size: 30px;
+  background-color: #e8e2f2;
+  width: 35%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.tituloSobrePlanos {
+  font-size: 23px;
+  background-color: #e8e2f2;
+  width: 35%;
+  border-radius: 10px;
+}
+
+.descricaoPlano {
+  margin: 3% auto;
+  border-radius: 8%;
+}
+.lista{
+    text-decoration: underline;
+}
