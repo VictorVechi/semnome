@@ -52,7 +52,7 @@ li>a:-webkit-any-link:hover {
 
 /* footer */
 footer {
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     text-align: center;
     padding: 15px 0;

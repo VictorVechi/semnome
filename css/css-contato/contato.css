@@ -46,3 +46,14 @@ span, figcaption {
 a {
     text-decoration: none;
 }
+
+footer {
+    width: 100vw;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #E6FFF9;
+    color: #012030; 
+}
