@@ -13,40 +13,8 @@ header {
     height: 7%;
 }
 
-nav {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-h1 {
-    justify-self: flex-start;
-    margin-bottom: 0 !important;
-    margin-left: 10px;
-}
-
-ul {
-    justify-self: flex-end;
-    margin-bottom: 0 !important;
-    padding: 0 !important;
-    margin-right: 20px;
-    border: #000 2px solid;
-}
-
-ul li {
-    list-style: none;
-    display: inline;
-    margin: 0 40px;
-}
-
-li a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+nav a {
+    margin-left: 15px !important;
 }
 
 main {
