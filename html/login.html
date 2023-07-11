@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/login/login.css">
     <!-- JAVASCRIPT -->
-    <script src="../script/script.js" defer></script>
+    <script src="../script/login-script.js" defer></script>
 </head>
 
 
@@ -28,10 +28,10 @@
         </nav>
     </header>
     <!-----------------------------MAIN--------------------------------->
-    <main class="container">
+    <main class="container-sm d-flex justify-content-around align-items-center">
 
         <!-----------------------SECTION-------------------------------->
-        <section class="row align-items-center vh-100">
+        <section class="row align-items-center">
 
             <!-----------------FORM LOGIN------------------------------->
             <form class="col-6">
@@ -51,10 +51,8 @@
 
                 <!-- BOTÃO -->
                 <div>
-                    <a href="./home.html"><button type="button" class="btn btn-success col-4"
-                            id="botao">Entrar</button></a>
-                    <a href="./cadastro.html"><button type="button" class="btn btn-success col-4"
-                            id="cadastre-se">Cadastre-se</button></a>
+                    <button type="button" class="btn btn-info col-6 btn-color" id="botao">Entrar</button>
+                    <a href="./cadastro.html" class="btn btn-info col-6 btn-color">Cadastre-se</a>
                 </div>
                 <a href="./recuperacao.html">Esqueci minha senha</a>
             </form>
