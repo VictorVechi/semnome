@@ -11,14 +11,23 @@ cep.addEventListener("change", function (event) {
 });
 
 function requisicao(cep) {
-  $.ajax({
-    url: `https://viacep.com.br/ws/${cep}/json/`,
-    method: "GET",
-    dataType: "json",
-    success: function (result) {
-      preencherCampos(result);
-    }
-  });
+  try {
+    $.ajax({
+      url: `https://viacep.com.br/ws/${cep}/json/`,
+      method: "GET",
+      dataType: "json",
+      success: function (result) {
+        preencherCampos(result);
+      },
+      fail: function (error) {
+        throw new Error("Erro na requisição")
+      },
+    });
+  }
+  catch (error) {
+    console.log(error.message)
+    alert(error.message)
+  }
 }
 
 function verificarTraco(cep) {
