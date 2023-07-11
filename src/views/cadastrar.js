@@ -35,10 +35,16 @@ function cadastrar(event) {
 
         if (cadastro.validarEmail() && cadastro.validarSenha()) {
             alert("Cadastro realizado com sucesso");
+            window.location.href = "../pages/login.html";
         } else {
             alert("Email ou senha inválidos");
         }
     } else {
         alert("Preencha todos os campos!");
     }
+}
+
+function redirecionarLogin(event) {
+    event.preventDefault();
+    window.location.href = "../pages/login.html";
 }

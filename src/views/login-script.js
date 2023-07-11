@@ -9,11 +9,11 @@ login.addEventListener('click', function (botao) {
     if (email.value.indexOf('@') === -1 || email.value.indexOf('@') === 0 || email.value.indexOf('@') === email.value.length - 1 || email.value.indexOf('.') === -1 || email.value.indexOf('.') === 0 || email.value.indexOf('.') === email.value.length - 1 || senha.value.length < 7) {
         alert('Login ou senha inválida')
     } else {
-        window.location.href = '../html/recuperacao.html'
+        window.location.href = '../pages/recuperacao.html'
     }
 }
 )
 botao2.addEventListener('click', function (botao) {
-    window.location.href = '../html/cadastro.html'
+    window.location.href = '../pages/cadastro.html'
 })
 
