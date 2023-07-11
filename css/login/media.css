@@ -1,0 +1,13 @@
+@media screen and (max-width: 767px){
+    .img-fluid{
+        display: none;
+    }
+    .col-6{
+        width: 100%;
+    }
+    
+    #enviar {
+        width: 100px;
+        margin: 0;
+    }
+}
