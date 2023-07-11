@@ -22,7 +22,7 @@ function cadastrar(event) {
     let preenchido = true;
 
     for (let i = 0; i < dados.length; i++) {
-        if (dados[i] == "") {
+        if (dados[i] == "" && i != 11) {
             preenchido = false;
             break;
         }
