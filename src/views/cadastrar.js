@@ -18,7 +18,7 @@ function cadastrar(event) {
         document.getElementById("numero").value,
         document.getElementById("complemento").value
     ]
-    
+
     let preenchido = true;
 
     for (let i = 0; i < dados.length; i++) {
@@ -30,7 +30,7 @@ function cadastrar(event) {
 
     if (preenchido) {
         let cadastro = new Cadastro(...dados);
-        
+
         console.log(cadastro);
 
         if (cadastro.validarEmail() && cadastro.validarSenha()) {
