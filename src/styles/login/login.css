@@ -34,6 +34,7 @@ form {
 .btn {
     margin-top: 10px;
     margin-left: 0 !important;
+    width: 150px;
 }
 
 a {
