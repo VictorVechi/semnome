@@ -17,6 +17,7 @@
         flex-direction: row !important;
         justify-content: space-between !important;
         width: 100% !important;
+        align-items: center !important;
     }
 
     .container-contato {
