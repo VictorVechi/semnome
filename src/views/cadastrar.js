@@ -39,7 +39,7 @@ function cadastrar(event) {
             console.log(cadastro);
 
             if (cadastro.validarEmail() && cadastro.validarSenha()) {
-                alert("Cadastro realizado com sucesso");
+                alert("Parabéns, você foi cadastrado com sucesso na lista de espera! Os cursos terão início em breve. Mas você pode acessar a plataforma e conhecer os cursos disponíveis.");
                 window.location.href = "../pages/login.html";
             } else {
                 alert("Email ou senha inválidos");
