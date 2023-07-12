@@ -6,7 +6,7 @@
 
 html,
 body {
-    height: 100%;
+    height: fit-content;
 }
 
 header {
@@ -32,12 +32,23 @@ section {
 
 }
 
+.row {
+    height: fit-content;
+}
+
+.secao-main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0 !important;
+}
+
 .img-fluid {
     width: 100px;
     height: auto;
     border-radius: 50%;
 }
-
 
 .mb-4 {
     margin: 0 !important;
@@ -55,16 +66,10 @@ h2 {
     margin: 0 !important;
 }
 
-.mb-3 {
-    margin: 0 !important;
-    /* height: 100%; */
-}
-
 footer {
     display: flex;
     height: 7%;
     width: 100%;
-    padding: 0;
     flex-direction: row;
     align-content: center;
     justify-content: center;
