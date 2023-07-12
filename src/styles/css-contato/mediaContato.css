@@ -1,9 +1,8 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     html {
         height: fit-content
     }
-
 
     .navbar-brand {
         display: none !important;
@@ -14,9 +13,8 @@
     }
 
     .navbar-nav {
-        flex-direction: row !important;
-        justify-content: space-between !important;
         width: 100% !important;
+        align-items: center !important;
     }
 
     .container-contato {

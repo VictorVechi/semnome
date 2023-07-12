@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/css-cadastro/cadastro.css">
-    <link rel="stylesheet" href="../css/css-cadastro/media-cadastro.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/css-cadastro/cadastro.css">
+    <link rel="stylesheet" href="../styles/css-cadastro/media-cadastro.css">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,11 +22,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js" defer></script>
 
     <!-- Javascript -->
-    <script src="../src/services/conexaoApi.js" defer></script>
-    <script src="../src/models/Cliente.js" defer></script>
-    <script src="../src/models/Cadastro.js" defer></script>
-    <script src="../src/views/cadastrar.js" defer></script>
-    <script src="../src/controllers/controller.js" defer></script>
+    <script src="../services/conexaoApi.js" defer></script>
+    <script src="../models/Cliente.js" defer></script>
+    <script src="../models/Cadastro.js" defer></script>
+    <script src="../views/cadastrar.js" defer></script>
+    <script src="../controllers/controller.js" defer></script>
 
     <title>Cadastro</title>
 </head>
@@ -35,14 +35,14 @@
     <header>
         <nav class="navbar justify-content-lg-between" style="background-color: #e6fff9">
             <!--logotipo-->
-            <a class="navbar-brand" href="../index.html">
+            <a class="navbar-brand" href="../../index.html">
                 <img src="../assets/logo.svg" width="30" height="30" alt="" />Tomorrow's Code
             </a>
 
             <!--Nav links-->
             <div class="justify-content-lg-between">
                 <!--Botão de login-->
-                <button type="button" class="btn btn-outline-info">Login</button>
+                <button type="button" class="btn btn-outline-info" id="btnLogin">Login</button>
                 <!-- Botão de cadastro
                     <button type="button" class="btn btn-info">Inscreva-se</button> -->
             </div>

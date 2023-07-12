@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+    .planos {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 22pt !important;
+    }
+
+    .planos {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardPlano {
+        width: 100%;
+    }
+
+    .tituloDescricao {
+        width: 100%;
+    }
+
+    .tituloSobrePlanos {
+        width: fit-content;
+    }
+}
+    
