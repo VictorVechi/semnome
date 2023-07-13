@@ -1,6 +1,6 @@
 <div >
 <h1 align="center">
-    <img alt="Tomorrow's Code" title="#Tomorrow's Code" style="background-color: white" src="./assets/logo.svg" width=50px"/>
+    <img alt="Tomorrow's Code" title="#Tomorrow's Code" style="background-color: white" src="./src/assets/logo.svg" width=50px"/>
 </h1>
 
 ## 🔋 Sobre o projeto
