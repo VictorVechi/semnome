@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/css-cadastro/cadastro.css">
+    <link rel="stylesheet" href="../styles/css-cadastro/media-cadastro.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" defer></script>
+
+    <!-- Hash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js" defer></script>
+
+    <!-- Javascript -->
+    <script src="../services/conexaoApi.js" defer></script>
+    <script src="../models/Cliente.js" defer></script>
+    <script src="../models/Cadastro.js" defer></script>
+    <script src="../views/cadastrar.js" defer></script>
+    <script src="../controllers/controller.js" defer></script>
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar justify-content-lg-between" style="background-color: #e6fff9">
+            <!--logotipo-->
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../assets/logo.svg" width="30" height="30" alt="" />Tomorrow's Code
+            </a>
+
+            <!--Nav links-->
+            <div class="justify-content-lg-between">
+                <!--Botão de login-->
+                <button type="button" class="btn btn-outline-info" id="btnLogin">Login</button>
+                <!-- Botão de cadastro
+                    <button type="button" class="btn btn-info">Inscreva-se</button> -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Cadastro</h1>
+            <form class="row g-3" autocomplete="off">
+                <div class="col-md-12">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu Nome">
+                </div>
+                <div class="col-md-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu email">
+                </div>
+                <div class="col-md-4">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="senha" placeholder="Senha">
+                </div>
+                <div class="col-md-4">
+                    <label for="confirmar-senha" class="form-label">Confirmar Senha</label>
+                    <input type="password" class="form-control" id="confirma-senha" placeholder="Confirmação de Senha">
+                </div>
+                <div class="col-md-6">
+                    <label for="rg" class="form-label">RG</label>
+                    <input type="text" class="form-control" id="rg" name="rg" placeholder="Digite seu RG">
+                </div>
+                <div class="col-md-6">
+                    <label for="cep" class="form-label">Cep</label>
+                    <input type="text" class="form-control" id="cep" placeholder="Digite seu cep">
+                </div>
+                <div class="col-md-4">
+                    <label for="estado" class="form-label">Estado</label>
+                    <input type="text" class="form-control" id="estado" placeholder="Digite seu Estado">
+                </div>
+                <div class="col-md-4">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" placeholder="Digite sua Cidade">
+                </div>
+                <div class="col-md-4">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" placeholder="Digite seu Bairro">
+                </div>
+                <div class="col-md-4">
+                    <label for="rua" class="form-label">Rua</label>
+                    <input type="text" class="form-control" id="rua" placeholder="Digite sua Rua">
+                </div>
+                <div class="col-md-4">
+                    <label for="bairro" class="form-label">Número</label>
+                    <input type="text" class="form-control" id="numero" placeholder="Digite seu Número">
+                </div>
+                <div class="col-md-4">
+                    <label for="Complemento" class="form-label">Complemento</label>
+                    <input type="text" class="form-control" id="complemento" placeholder="Digite seu Complemento">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-info" id="btnCadastrar">Cadastrar-se</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Tomorrow's Code</p>
+    </footer>
+</body>
+
+</html>

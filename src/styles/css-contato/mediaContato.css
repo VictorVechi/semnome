@@ -1,0 +1,46 @@
+@media screen and (max-width: 768px) {
+
+    html {
+        height: fit-content
+    }
+
+    .navbar-brand {
+        display: none !important;
+    }
+
+    .btn {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        width: 100% !important;
+        align-items: center !important;
+    }
+
+    .container-contato {
+        flex-direction: column !important;
+    }
+
+    .caixa {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .caixa:hover {
+        gap: 0 !important;
+        padding: 0 !important;
+        color: none !important;
+        background: none !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+    }
+
+    footer p {
+        margin: 0 !important;
+    }
+
+}

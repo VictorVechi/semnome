@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link e scripts do Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"
+        defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"
+        defer></script>
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/css-home/home.css">
+    <link rel="stylesheet" href="../styles/css-home/media-home.css">
+    <title>Tomorrow's Code</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  " style="background-color: #E6FFF9;">
+            <!--logotipo-->
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../assets/logo.svg" width="30" height="30" alt="">Tomorrow's Code
+            </a>
+
+            <!--Nav links-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Início</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contato.html">Contato</a>
+                </li>
+            </ul>
+
+            <button type="button" class="btn btn-outline-info" style="width: 150px;">Bem vindo!</button>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Introdução-->
+        <section class="row secao-main">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="mb-5 mb-lg-0  text-lg-start">
+                        <h1 class="mb-4">Desperte seu potencial e conquiste o amanhã</h1>
+                        <p class="fw-normal text-muted mb-3">Aqui, você encontrá uma variedade de cursos
+                            projetados para ajudar você a expandir seus
+                            conhecimentos e habilidades.</p>
+                        <p class="fw-normal text-muted mb-3">Nossa plataforma oferece uma experiência única de
+                            aprendizado, com instrutores especializados e
+                            conteúdos atualizados, preparados especialmente para acompanhar as tendências e demandas
+                            do
+                            mercado.</p>
+                        <p class=" fw-normal text-muted mb-3">Descubra nossos próximos cursos!</p>
+                        <div class="d-flex flex-column flex-lg-row align-items-center">
+                            <button class="btn-info btn " onclick="alert('Ainda em desenvolvimento')">Próximos
+                                cursos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../assets/ilutracao-home.svg" alt="ilustração" class="ilustracao">
+                </div>
+            </div>
+        </section>
+        <!--Próximos Cursos-->
+        <section class="cursos">
+            <!--Título da sessão-->
+            <h2 class="mt-5 mb-5 text-center" id="cursos">Casatre-se na lista de espera e garanta sua vaga para a
+                próxima turma!</h2>
+            <!-- Container com os cards -->
+            <div class="card-deck">
+                <!-- Curso 1 -->
+                <div class="card mb-3">
+                    <div class="card-header d-flex justify-content-around align-items-end">
+                        <h5>Hard Skills<br>
+                            <span class="font-weight-bold">Inara Almeida</span>
+                        </h5>
+
+                        <img class="img-fluid" src="../assets/inaraalmeida.jpeg" alt="Foto Inara Almeida" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">O que potes e variáveis tem em comum?</h5>
+                        <p class="card-text">
+                            Desvende a conexão entre variáveis e potes neste curso de introdução ao
+                            desenvolvimento web!<br> Você aprenderá a utilizar as variáveis como potes virtuais,
+                            compreendendo como armazenar, acessar e manipular essas informações. </p>
+
+                    </div>
+                    <div class="card-footer d-flex justify-content-between ">
+                        <button type="button" class="btn btn-info" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Cadastrar
+                        </button>
+                        <small class="text-muted">Inicia em 17 de Julho</small>
+                    </div>
+                </div>
+
+                <!-- Curso 2 -->
+                <div class="card mb-3">
+                    <div class="card-header d-flex justify-content-around align-items-end">
+                        <h5>Soft Skills <br><span class="font-weight-bold">Esli queiroz</span></h5>
+
+                        <img class="img-fluid" src="../assets/esliqueiroz.jpg" alt="Foto Esli Queiroz" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Comunicação não violenta</h5>
+                        <p class="card-text"> Prepare-se para transformar sua abordagem comunicativa e
+                            desenvolver uma base sólida de habilidades interpessoais essenciais para o sucesso
+                            pessoal e profissional.</p>
+
+                    </div>
+                    <div class="card-footer d-flex justify-content-between ">
+                        <button type="button" class="btn btn-info" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Cadastrar
+                        </button>
+                        <small class="text-muted">Inicia em 17 de Julho</small>
+                    </div>
+                </div>
+
+                <!-- Curso 3 -->
+                <div class="card mb-3">
+                    <div class="card-header d-flex justify-content-around align-items-end">
+                        <h5>Hard Skills<br>
+                            <span class="font-weight-bold">Leo Costa</span>
+                        </h5>
+                        <img class="img-fluid" src="../assets/leocosta.png" alt="Foto Leo Costa" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">DOM</h5>
+                        <p class="card-text">Neste curso você aprenderá como utilizar o JavaScript para
+                            interagir com o DOM, modificando estilos, conteúdos e eventos dos elementos da
+                            página.</p>
+
+
+                    </div>
+                    <div class="card-footer d-flex justify-content-between ">
+                        <button type="button" class="btn btn-info" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Cadastrar
+                        </button>
+                        <small class="text-muted">Inicia em 17 de Julho</small>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Parabéns!! Você acaba de garantir sua vaga.</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info" data-dismiss="modal">fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Tomorrow's Code</p>
+    </footer>
+
+</body>
+
+</html>

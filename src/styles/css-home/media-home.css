@@ -1,0 +1,52 @@
+@media screen and (max-width: 767px) {
+    html {
+        height: fit-content;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    nav {
+        height: 100%;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        flex-direction: row !important;
+    }
+
+    .navbar-nav {
+        height: 100%;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        flex-direction: row !important;
+        width: 40%;
+    }
+
+    .ilustracao {
+        display: none;
+    }
+
+    .img-fluid {
+        width: 50px;
+    }
+
+    .mb-4 {
+        margin: 0 !important;
+        font-size: 12pt;
+    }
+
+    .btn {
+        width: 110px;
+        font-size: 8pt;
+    }
+
+    p {
+        font-size: 8pt;
+    }
+
+    h2 {
+        font-size: 10pt;
+    }
+}
