@@ -34,8 +34,6 @@ class Cadastro extends Cliente {
     validarSenha() {
         if (this.senha == this.confirmarSenha) {
             return true;
-        } else {
-            return false;
         }
-    }
-}
+        return false;
+    }}
